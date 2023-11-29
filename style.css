@@ -1,0 +1,135 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* NAV */
+.navbar-nav{
+    font-weight: bold;
+}
+.container-fluid img{
+    aspect-ratio: 1/1;
+    width: 40px;
+}
+.container-fluid ion-icon{
+    padding: 12px;
+}
+nav .message button{
+    border: #754ffe 1.5px solid;
+}
+
+/* JUMBTRON */
+.jumbtron{
+    background-color: #754ffe;
+    color: white;
+}
+.jumbtron .up button{
+    border: none;
+    font-size: 12.5px;
+}
+.jumbtron .up h1{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.jumbtron .up p{
+    font-size: 16.4px;
+    color: #bbaaffff;
+}
+.jumbtron .up img{
+    width: 100%;
+}
+.jumbtron .down p span{
+    font-weight: bolder;
+}
+.jumbtron .down p{
+    font-size: 13px;
+    width: max-content;
+}
+.jumbtron .one, .jumbtron .two, .jumbtron .three{
+    display: block;
+}
+.jumbtron .down ion-icon{
+    padding: 7.5px;
+    background-color: #ffedd6;
+    border-radius: 50%;
+    color: brown;
+
+}
+.pallinoViola{
+    width: 12.5px;
+    height: 12.5px;
+    background-color: #754ffe;
+    border: white 3px solid;
+    top: 0px;
+    left: 23px;
+    z-index: 2;
+}
+.pallinoVerde{
+    width: 12.5px;
+    height: 12.5px;
+    background-color: #6cfe4f;
+    border: white 3px solid;
+    top: 26px;
+    left: 82px;
+    z-index: 2;
+
+}
+/* MODALE */
+.modal-dialog p{
+    font-size: 12.5px;
+}
+/* section */
+#one, #two, #three{
+    margin-inline: 10%;
+    margin-bottom: 12.5%;
+}
+#one h3, #two h3, #three h3{
+    font-weight: bold;
+}
+#modale{
+    width: 40px;
+    height: 40px;
+    border: none;
+    top: 0px;
+    left: 56px;
+    z-index: 2;
+}
+/* CAROSELLO */
+#caroselloUno button:nth-of-type(1), #caroselloDue button:nth-of-type(1), #caroselloTre button:nth-of-type(1){
+    justify-content: start;
+}   
+#caroselloUno button:nth-of-type(2), #caroselloDue button:nth-of-type(2), #caroselloTre button:nth-of-type(2){
+    justify-content: end;
+}
+.carousel-control-next{
+    left: 90%;
+    
+}
+.carousel-control-prev{
+    left: -5%;
+    
+}
+/* CARD */
+.card{
+    box-shadow: 1px 2px 2px rgb(223, 223, 223);
+}
+.card .card-body p span{
+    text-decoration: line-through;
+    font-size: small;
+}
+.card .card-body .card-star p:nth-of-type(2){
+    font-size: small;
+}
+
+.card .card-down img{
+    width: 30px;
+}
+.card h5{
+    font-size: 17.5px;
+}
+/* footer */
+.footer{
+    display: flex;
+    gap: 35%;
+}
+.footer p{
+    font-size: x-small;
+}
