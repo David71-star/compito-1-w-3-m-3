@@ -124,6 +124,17 @@ nav .message button{
 }
 .card h5{
     font-size: 17.5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;  
+}
+.card-info, .card-down-left{
+    /* font-size: 15px;
+    flex-wrap: wrap-reverse; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 /* footer */
 .footer{
