@@ -11,9 +11,24 @@
 }
 .container-fluid ion-icon{
     padding: 12px;
+    transition-duration: 0.3s;
+
 }
 nav .message button{
     border: #754ffe 1.5px solid;
+}
+nav ul li ion-icon:hover{
+    cursor: pointer;
+    rotate: -90deg;
+    transition-duration: 0.3s;
+}
+nav .message ion-icon:hover{
+    animation: drin 0.1s linear 3 alternate-reverse;
+    cursor: pointer;
+}
+@keyframes drin {
+    0% {rotate: -45deg}
+    100% {rotate: 45deg}
 }
 
 /* JUMBTRON */
@@ -42,9 +57,6 @@ nav .message button{
 .jumbtron .down p{
     font-size: 13px;
     width: max-content;
-}
-.jumbtron .one, .jumbtron .two, .jumbtron .three{
-    display: block;
 }
 .jumbtron .down ion-icon{
     padding: 7.5px;
@@ -83,6 +95,7 @@ nav .message button{
 }
 #one h3, #two h3, #three h3{
     font-weight: bold;
+    padding-left: 23px;
 }
 #modale{
     width: 40px;
@@ -99,17 +112,26 @@ nav .message button{
 #caroselloUno button:nth-of-type(2), #caroselloDue button:nth-of-type(2), #caroselloTre button:nth-of-type(2){
     justify-content: end;
 }
+#caroselloUno .carousel-inner .row, #caroselloDue .carousel-inner .row, #caroselloTre .carousel-inner .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 11.5px;
+}
 .carousel-control-next{
-    left: 90%;
+    right: -5%;
+    width: 32px;
     
 }
 .carousel-control-prev{
     left: -5%;
+    width: 32px;
     
 }
 /* CARD */
 .card{
     box-shadow: 1px 2px 2px rgb(223, 223, 223);
+    transition: 0.3s;
 }
 .card .card-body p span{
     text-decoration: line-through;
@@ -135,6 +157,29 @@ nav .message button{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+.card:hover{
+    transform: scale(101%, 101%);
+    box-shadow: 1px 1px 2px grey;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.card .card-star ion-icon:hover{
+    rotate: 360deg;
+    transition-duration: 0.3s;
+}
+.card .card-down ion-icon{
+    fill: none !important;
+    stroke: gray;
+    stroke-width: 5% !important;
+}
+.card .card-down ion-icon:hover{
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+    transform: rotate(360deg);
+    fill: #595c5fff !important;
+    
+    
 }
 /* footer */
 .footer{
